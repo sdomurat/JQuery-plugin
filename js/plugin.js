@@ -10,10 +10,10 @@
 		var lenghtsTest = settings.lenghts.split("-").map(function(number) {
 			return parseInt(number);
 		});
-		var pattern       = settings.pattern;
+		var pattern = settings.pattern;
 		var value = $(this).val();
-		var isOk      = settings.showOk;
-		var isError      = settings.showError;
+		var isOk = settings.showOk;
+		var isError = settings.showError;
 
 		console.log("value " + value);
 		console.log("value.length " + value.length);

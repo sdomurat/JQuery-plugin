@@ -23,4 +23,21 @@ $(document).ready(function(){
 			showError: isError
 		});
 	});
+
+	$("#nazwisko").focusout(function() {
+		$(this).validate({
+			lenghts: "4-19",
+			pattern: new RegExp(/[a-zA-Z]/),
+			showOk: isOk,
+			showError: isError
+		});
+	});
+
+	$("#email").focusout(function() {
+		$(this).validate({
+			pattern: new RegExp(/[\+a-z\.]+\@[a-z]+\.[a-z]{2,}/),
+			showOk: isOk,
+			showError: isError
+		});
+	});
 });
