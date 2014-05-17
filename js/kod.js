@@ -40,4 +40,13 @@ $(document).ready(function(){
 			showError: isError
 		});
 	});
+
+	$("#kod").focusout(function() {
+		$(this).validate({
+			pattern: new RegExp(/^[0-9]{2}-[0-9]{3}$/),
+			lenghts: "6",
+			showOk: isOk,
+			showError: isError
+		});
+	});
 });
