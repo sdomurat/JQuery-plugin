@@ -1,5 +1,7 @@
-$("#imie").focusout(function() {
-	$(this).validate({
-		lenghts: "2-6"
+$(document).ready(function(){
+	$("#imie").focusout(function() {
+		$(this).validate({
+			lenghts: "4-9"
+		});
 	});
 });
