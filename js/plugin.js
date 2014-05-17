@@ -22,25 +22,21 @@
 		console.log("lenghtsTest[1] " + lenghtsTest[1]);
 
 		var error = 0;
-		//return this.each(function() {
-		//	if (lenghtsTest[0] == value.length){
-		//		console.log("error1111");
-		//		error = 1;
-		//		isOk(this);
+		return this.each(function() {
 
-		//	}
 			if (lenghtsTest[0] > value.length || value.length > lenghtsTest[1]){
 				error = 1;
 				console.log("error2222");
 				isError(this);
-
 			} else{
 				isOk(this);
 			};
+
 			if (!pattern.test(value)) {
 				error = 1;
 				isError(this);
 			};
-		//})
+
+		});
 	};
 }(jQuery));
