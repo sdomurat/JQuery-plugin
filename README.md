@@ -1,0 +1,1 @@
+# Plugin jQuery validacja formularza
