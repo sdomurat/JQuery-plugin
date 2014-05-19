@@ -52,6 +52,9 @@ $(document).ready(function(){
 
 	$('#haslo').focusout(function(){
 		$(this).validate({
+			lenghts: "6",
+			showOk: isOk,
+			showError: isError,
 			
 		});
 	});
