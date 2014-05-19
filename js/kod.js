@@ -49,4 +49,10 @@ $(document).ready(function(){
 			showError: isError
 		});
 	});
+
+	$('#haslo').focusout(function(){
+		$(this).validate({
+			
+		});
+	});
 });
