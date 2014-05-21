@@ -17,8 +17,8 @@ $(document).ready(function(){
 
 	$("#imie").focusout(function() {
 		$(this).validate({
-			lenghts: "4-9",
-		  pattern: new RegExp(/[a-zA-Z]/),
+			lenghts: "4-12",
+		  pattern: new RegExp(/^[a-zA-Z]+$/),
 			showOk: isOk,
 			showError: isError
 		});
@@ -27,7 +27,7 @@ $(document).ready(function(){
 	$("#nazwisko").focusout(function() {
 		$(this).validate({
 			lenghts: "4-19",
-			pattern: new RegExp(/[a-zA-Z]/),
+			pattern: new RegExp(/^[a-zA-Z]+$/),
 			showOk: isOk,
 			showError: isError
 		});
@@ -52,10 +52,14 @@ $(document).ready(function(){
 
 	$('#haslo').focusout(function(){
 		$(this).validate({
-			lenghts: "6",
+			lenghts: "6-12",
 			showOk: isOk,
 			showError: isError,
-			
+			small: 1,
+			big: 1,
+			numbers: 1,
+			special: 1
+			//polish: false
 		});
 	});
 });
