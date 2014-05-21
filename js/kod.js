@@ -35,7 +35,7 @@ $(document).ready(function(){
 
 	$("#email").focusout(function() {
 		$(this).validate({
-			pattern: new RegExp(/[\+a-z\.]+\@[a-z]+\.[a-z]{2,}/),
+			pattern: new RegExp(/[\+a-z0-9\.]+\@[a-z]+\.[a-z]{2,}/),
 			showOk: isOk,
 			showError: isError
 		});
@@ -52,7 +52,7 @@ $(document).ready(function(){
 
 	$('#haslo').focusout(function(){
 		$(this).validate({
-			lenghts: "6-12",
+			lenghts: "6-18",
 			showOk: isOk,
 			showError: isError,
 			small: 1,
